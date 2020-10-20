@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Home</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <!-- navigation bar-->
+        <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Medical Help</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="indexHome.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="profile.html">Profile<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stylelifeHome.html">Life Style</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="articleHome.html">Articles</a>
+                    </li>
+
+
+
+                </ul>
+                <h5 class="nav-item mr-5 mt-2 userWelcome" style="color: white;"></h5>
+                <a class="btn btn-info" href="index.html">Logout</a>
+            </div>
+        </nav>
+        <!-- posting area -->
+        <div class="container text-center">
+            <div class="form-group mt-3">
+                <label class="lead">Post Something ...</label>
+                <input type="text" class="form-control" placeholder="Tiltle ..." id="title">
+                <textarea class="form-control" id="postTextarea" rows="3"></textarea>
+                <button type="button" id="postBtn" class="btn btn-primary">Post</button>
+            </div>
+        </div>
+        
+        <div class="container" id="postArea">
+
+
+        </div>
+
+
+
+        <div class="container text-center">
+            <br><br><br>
+            <h1>Medical Help</h1>
+            <p class="lead">How to Book for a Doctor</p>
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="#"><img src="images/search.PNG"></a>
+                    <p class="h6">Search For a Doctor</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/doctors.PNG">
+                    <p class="h6">Compare & Choose</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/book.PNG">
+                    <p class="h6">Book For a Doctor</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col col-flex-start">
+                    <p class="h5">Medical Help</p>
+                    <a class="card-link" href="#">About US</a><br>
+                    <a class="card-link" href="#">Our Team</a><br>
+                    <a class="card-link" href="#">Careers</a><br>
+                    <a class="card-link" href="#">Privacy Policy</a><br>
+                    <a class="card-link" href="#">Contact Us</a><br>
+
+                </div>
+                <div class="col col-flex-unordered">
+                    <p class="h5">Areas</p>
+                    <a class="card-link" href="#">Heliopolis</a><br>
+                    <a class="card-link" href="#">Nasr City</a><br>
+                    <a class="card-link" href="#">El-Maadi</a><br>
+                    <a class="card-link" href="#">New Cairo</a><br>
+                    <a class="card-link" href="#">Hadayek El-Kobba</a><br>
+                    <a class="card-link" href="#">El-Manyal</a><br>
+                    <a class="card-link" href="#">Shoubra</a><br>
+                    <a class="card-link" href="#">West El-Balad</a><br>               
+                </div>
+                <div class="col col-flex-unordered">
+                    <p class="h5">Specialities</p>
+                    <a class="card-link" href="#">Dermatology Doctor</a><br>
+                    <a class="card-link" href="#">Dentistry Doctor</a><br>
+                    <a class="card-link" href="#">Psychiatry Doctor</a><br>
+                    <a class="card-link" href="#">Pediatrics and New Born Doctor</a><br>
+                    <a class="card-link" href="#">Neurology Doctor</a><br>
+                    <a class="card-link" href="#">Orthopedics Doctor</a><br>
+                    <a class="card-link" href="#">Gynaecology and Infertility Doctor</a><br>
+                    <a class="card-link" href="#">Ear, Nose and Throat Doctor</a><br>
+                    <a class="card-link" href="#">Cardiology and Vascular Disease Doctor</a><br>
+                </div>
+                <div class="col col-flex-last">
+                    <p class="h5">Subscribe</p>
+                    <a href="#"><span class="fa fa-facebook fa-lg m-2" style="color: blue;"></span></a>
+                    <a href="#"><span class="fa fa-google-plus fa-lg m-2" style="color: red;"></span></a>
+                    <a href="#"><span class="fa fa-instagram fa-lg m-2" style="color:purple;"></span></a>
+                    <a href="#"><span class="fa fa-twitter fa-lg m-2" style="color: deepskyblue;"></span></a>
+
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+        <script src="script.js" type="text/javascript"></script>
+
+        <script>
+            
+
+        </script>
+    </body>
+</html>

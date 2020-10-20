@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Articles</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <style>
+            .rotate-container .card-front, .rotate-container .card-back{
+                transform: perspective(600px) rotateY(0deg);
+                backface-visibility: hidden;
+                transition: all 3s ease;
+                height: auto;
+                position: absolute;
+                margin-top: 0;
+                overflow: auto;
+
+            }
+            .rotate-container .card-back{
+                transform: perspective(1600px) rotateY(180deg);
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+            .rotate-container .rotate-card-front{
+                transform: perspective(1600px) rotateY(-180deg);
+            }
+            .rotate-container .rotate-card-back{
+                transform: perspective(1600px) rotateY(0deg);
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- navigation bar -->
+        <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Medical Help</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="indexHome.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stylelifeHome.html">Life Style</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="articleHome.html">Articles<span class="sr-only">(current)</span></a>
+                    </li>
+
+
+
+                </ul>
+                <h5 class="nav-item mr-5 mt-2 userWelcome" style="color: white;"></h5>
+                <a class="btn btn-info" href="index.html">Logout</a>
+            </div>
+        </nav>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a class="card-link" href="#" id="Ar1">Fun Facts About the Muscular System You Didn’t Know</a></li>
+                            <li class="list-group-item"><a class="card-link" href="#" id="Ar2">Nate Berkus’ Design Tips Can Play a Powerful Role in Quitting Smoking</a></li>
+                            <li class="list-group-item"><a class="card-link" href="#" id="Ar3">How does poor sleep affect our ability to learn? Study investigates</a></li>
+                        </ul>
+                    </div>
+                </div> 
+                <div class="col">
+                    <div class="rotate-container" id="A1">
+
+                        <!------------------------------>
+                        <div class="card card-front text-center">
+                            <div class="card-header">
+                                <p class="h5">Fun Facts About the Muscular System You Didn’t Know</p>
+                                <p class="h6 text-muted">July 3, 2017 Written by James Roland on May 31, 2017</p>
+                            </div>
+                            <img class="img-fluid" src="images/article1.jpg">
+                            <div class="card-block">
+                                <p class="card-text">The muscular system is what allows your body to move. Muscles are necessary for little movements, like smiling, and for big movements, such as running or throwing. Some muscles you control, like your bicep when you’re lifting something heavy. Other muscles, such as those that help you breathe, move without you thinking at all. 
+                                    In addition to being responsible for movement, the muscular system is also what keeps your body in whatever position it’s in against the pull of gravity. But there’s much more to your muscles than that. To find out more about the muscular system, check out these 14 fun facts.</p>
+                                <button class="btn btn-primary btn-rotate">Read More &nbsp;<span class="fa fa-long-arrow-right"></span> </button>
+                            </div>
+                        </div>
+                        <!------------------------------>
+                        <div class="card card-back text-center">
+                            <div class="card-block">
+                                <p class="card-text">
+                                    1. Muscles are divided into three types: smooth, cardiac, and skeletal Smooth muscles are the involuntary muscles in your gut, blood vessels, and elsewhere that work without you consciously thinking about making them move. Cardiac muscles are in your heart. Skeletal muscles are attached to the bone and help you with everyday activities ranging from sitting and standing to walking, typing, and doing housework. 
+
+                                    2. Your body contains more than 600 muscles These include the muscles you can feel in your arms and legs, as well as muscles deep inside your body, like the one that keeps your heart beating and those that help you digest food. By comparison, your body has 206 skeletal bones. 
+
+                                    3. Muscles are made up of special cells called muscle fibers Their main quality is contractibility, which means the muscles can shorten or lengthen as needed. Almost all movement in your body happens because of muscle contractibility. 
+
+                                    4. The largest muscle in the body is the gluteus maximus It’s the main extensor muscle of the hip, though you may know it as the large muscle in the buttocks. It’s the largest muscle in the body because its main job is to support your trunk and maintain proper posture. The gluteus maximus is the main muscle used to help you walk upstairs.
+
+                                    5. The smallest muscles in the body are in your inner ear They include the tensor tympani and the stapedius. They connect to your eardrum and hold your inner ear together. The smallest bones in the body are also in your ear.
+
+                                    6. The strongest muscle, based on its size, is the masseter It’s a muscle in your jaw. It can close your teeth with a force as great as 200 pounds on your molars. 
+
+                                    7. Muscles are attached to bones by tendons Understanding the difference between tendons and ligaments can be confusing. In addition to attaching muscles to bones, tendons can also attach muscles to parts of your body such as your eyeballs. Ligaments connect one bone to another in your joints. 
+
+                                    8. Muscles make up about 40 percent of your total body weight This is true for most vertebrates.
+
+                                    9. The hardest working muscle in the body is the heart On an average day, it pumps about 2,500 gallons of blood. 
+
+                                    10. Some of your busiest muscles are those controlling eye movements These muscles are constantly making adjustments as you read, watch TV, or look around you. In an hour of reading, your eyes may make as many as 10,000 coordinated movements. 
+
+                                    11. Most of the heat produced in your body comes from muscle contraction Muscle movement counts for almost 85 percent of the total heat produced inside the body. When you’re cold, your muscles contract involuntarily. When you shiver, those are muscles trying to warm your body. 
+
+                                    12. The motor cortex on one side of your brain controls muscle movement on the other side of the body The motor cortex on the right side of your brain controls the muscles on the left side of the body, while the motor cortex on the left side controls the muscles on your right side. The brain sends movement signals through the spinal cord and out through the peripheral nervous system in your muscles. The messages from the brain become more complex when there are more muscles involved in an activity, such as shooting a jump shot in basketball. 
+
+                                    13. Muscles usually work in pairs When one shortens, its corresponding muscle lengthens. Think about doing bicep curls. When you curl your arm up so the bicep is shorter, the tricep on the other side of your arm is straightened out. 
+
+                                    14. Muscles can’t push. They can only pull. When you’re pushing a door open, for instance, your muscles are actually pulling your elbow and shoulder against the door. 
+
+                                    No matter what you’re doing, you have muscles at work. But to keep them healthy, they need exercise. Even your heart needs a workout to stay strong, which is why aerobic exercise that gets your heart rate up is so important. The muscles in your arms, legs and elsewhere need exercise, too. As you age, you start to lose muscle mass. But if you exercise your muscles with strength training and resistance exercises, you can slow down that process and maintain a mighty muscular system for a long time. And that’s a fact.
+                                </p>
+                                <ul class="social-links list-unstyled d-flex justify-content-center">
+                                    <li><a href="#" target="_blank"><span class="fa fa-facebook mr-2"></span></a></li>
+                                    <li><a href="#" target="_blank"><span class="fa fa-twitter mr-2"></span></a></li>
+                                    <li><a href="#" target="_blank"><span class="fa fa-snapchat mr-2"></span></a></li>
+                                    <li><a href="#" target="_blank"><span class="fa fa-instagram mr-2"></span></a></li>
+                                </ul>
+                                <button class="btn btn-primary mb-1 btn-rotate"><span class="fa fa-long-arrow-left"> </span>&nbsp; Back</button>
+                            </div>
+                        </div>     
+                    </div>
+                    <div class="rotate-container" id="A2">
+
+                        <!------------------------------>
+                        <div class="card card-front text-center">
+                            <div class="card-header">
+                                <p class="h5">Nate Berkus’ Design Tips Can Play a Powerful Role in Quitting Smoking</p>
+                                <p class="h6 text-muted">Written by Elaine Atwell on June 14, 2017</p>
+                            </div>
+                            <img class="img-fluid" src="images/article2.jpg">
+                            <div class="card-block">
+                                <p class="card-text">TLC’s Nate Berkus talks to Healthline about designing a smoke-free home and the importance of refreshing your space with some new furniture, a new paint color on the door, and maybe a plant or two.</p>
+                                <button class="btn btn-primary btn-rotate">Read More &nbsp;<span class="fa fa-long-arrow-right"></span> </button>
+                            </div>
+                        </div>
+                        <!------------------------------>
+                        <div class="card card-back text-center">
+                            <div class="card-block">
+                                <p class="card-text">
+                                    TLC’s Nate Berkus talks to Healthline about designing a smoke-free home and the importance of refreshing your space with some new furniture, a new paint color on the door, and maybe a plant or two.
+
+                                    Quitting smoking is both one of the hardest and best things anyone can do for their health. Doing it successfully can mean redesigning your life and self-image. 
+
+                                    Nate Berkus is a celebrity interior designer and star of TLC’s “Nate and Jeremiah by Design.” He knows how tough it can be to kick a smoking habit. He also knows what a crucial role interior design can play when quitting and creating a healthier lifestyle. 
+
+                                    Nate recently partnered with Nicorette in a campaign to spread his message. He spoke with us about what inspired him to quit, how he stays on the path, and how anyone can make their home a smoke-free environment. 
+
+                                    How long were you a smoker? I’ve smoked on and off since I was a teenager. I picked up my first cigarette in high school, like most people do, and didn’t even think about it at all. I certainly didn’t think about the long-term consequences or the world changing around me, and having to walk outside of restaurants in the middle of dinner for a smoke break. So, I smoked on and off for close to 15 years or longer. 
+
+                                    And how long has it been since you quit? I’ve been smoke-free for five years now and it was a huge decision for me, largely based on becoming a dad two years ago. You make a lot of changes when you have your first child, and one of those changes was definitely a focus on my well-being and my health, because it just felt important to get healthy. What role do you feel design can play in someone living a healthy lifestyle? I do believe that design plays a huge role in lifestyle. I’ve seen the power of design change how kids do in school, when they have a designated area to do their homework, and they have all the supplies at their fingertips. I’ve seen people walk around feeling better about themselves and their schedules and jobs, when they come home and their house is organized and well-run. 
+
+                                    If you’re quitting smoking, how important is design? One of the things that’s always been interesting to me about how people are living is that we fall into habits. We pay our bills at the same place, we watch TV on the same sofa, everyone knows whose chair is whose. And to break a habit like smoking — if you have a ceremony around smoking or a place where you always smoke in the home — one of the things I found was really effective is to change it. 
+
+                                    Create a space that’s in a different room, or make your own little area, wherever it is. But the idea is buying yourself a beautiful new chair, or updating the pillows, and getting rid of the things that smell like smoke. Buy a new rug in your favorite color, add artwork to the walls that’s inspirational, or a beautiful black and white photo of you and your family. 
+
+                                    It helps you break the habit of smoking when your space looks different, and you get rid of stuff that was built around the ceremony of smoking. 
+
+                                    Do you have any advice for people who smoke outside, like on their porch or lawn? Same thing! Painting your front door a different color, buying some new chairs, or putting in a potted plant instead of an ashtray is going to change the way you feel when you go to that space. I’ve spent 20 years crafting environments for people to support the way they live and how they want to see themselves. 
+
+                                    What is the best part about being a nonsmoker? I think travel. Traveling when you’re a smoker is brutal. I remember caring so deeply about how long a flight was, or if there was a layover. Was there a way to get outside and have a cigarette? And now I’m like: How long is the flight and how many cartoons do I have on my iPad? 
+
+                                    Can you pinpoint the moment when you really felt like a nonsmoker and you were out of danger of going back? No, I wish I could. But definitely the idea of smoking a cigarette around my daughter, who’s 2 years old, just wasn’t the way I saw myself. And it’s very much at odds of how I view myself as a person. 
+
+                                    There was a time when smoking seemed pretty cool to me. I lived in France for two years, and sitting outside a café with a coffee and a cigarette had a certain romance for me at that time. But that’s not really my life anymore. My life now is driving back and forth to playdates and stepping on toys.</p>
+                                <ul class="social-links list-unstyled d-flex justify-content-center">
+                                    <li><a href="#" target="_blank"><span class="fa fa-facebook mr-2"></span></a></li>
+                                    <li><a href="#" target="_blank"><span class="fa fa-twitter mr-2"></span></a></li>
+                                    <li><a href="#" target="_blank"><span class="fa fa-snapchat mr-2"></span></a></li>
+                                    <li><a href="#" target="_blank"><span class="fa fa-instagram mr-2"></span></a></li>
+                                </ul>
+                                <button class="btn btn-primary mb-1 btn-rotate"><span class="fa fa-long-arrow-left"> </span>&nbsp; Back</button>
+                            </div>
+                        </div>          
+
+                    </div> 
+                    <div class="rotate-container" id="A3">
+
+                        <!------------------------------>
+                        <div class="card card-front text-center">
+                            <div class="card-header">
+                                <p class="h5">How does poor sleep affect our ability to learn? Study investigates</p>
+                                <p class="h6 text-muted">By Ana Sandoiu | Published	Tuesday 23 May 2017</p>
+                            </div>
+                            <img class="img-fluid" src="images/article3.jpg">
+                            <div class="card-block">
+                                <p class="card-text">Most of us know that a good night's sleep is key for happiness and productivity, and that conversely, a night of poor sleep can have negative effects on our performance during the day. But a new study manages to find precisely the brain area responsible for learning new skills and shows how it can be affected by poor sleep quality.</p>
+                                <button class="btn btn-primary btn-rotate">Read More &nbsp;<span class="fa fa-long-arrow-right"></span> </button>
+                            </div>
+                        </div>
+                        <!------------------------------>
+                        <div class="card card-back text-center">
+                            <div class="card-block">
+                                <p class="card-text">
+                                    Most of us know that a good night's sleep is key for happiness and productivity, and that conversely, a night of poor sleep can have negative effects on our performance during the day. But a new study manages to find precisely the brain area responsible for learning new skills and shows how it can be affected by poor sleep quality.
+                                    A team of researchers from the University of Zurich (UZH) and the Swiss Federal Institute of Technology (ETH) in Zurich, both in Switzerland, set out to examine the effect of a disturbed deep sleep phase on the brain's ability to learn new things.
+
+                                    More specifically, the new study - published in the journal Nature Communications - looks at the brain's ability to change and adapt in response to the stimuli that it receives from the environment, or neuroplasticity, in the motor cortex and how it is affected by deep sleep.
+
+                                    The motor cortex is the brain area responsible for developing and controlling motor skills, and the deep sleep phase - also called slow-wave sleep - is key for memory formation and processing, as well as for helping the brain to restore itself after a day of activity.
+
+
+                                    Manipulating the motor cortex during deep sleep
+                                    The study involved six women and seven men who were asked to perform motoric tasks during the day following a night of unperturbed sleep, and after a night during which their deep sleep had been disturbed.
+
+                                    The tasks involved learning a series of finger movements, and the researchers were able to locate precisely the brain area responsible for learning movement.
+
+                                    Using an electroencephalogram, the researchers monitored the brain activity of the participants while they were sleeping.
+
+                                    On the first day of the experiment - after the first movement learning session - the participants were able to sleep without disturbance.
+
+                                    On the second night, however, the researchers manipulated the participants' sleep quality. They were able to focus on the motor cortex and disrupt their deep sleep, thus investigating the impact that poor sleep has on the neuroplasticity involved in practicing new movements.
+
+                                    The participants did not know that their deep sleep phase had been tampered with. To them, the quality of their sleep was roughly the same on both occasions.
+
+
+                                    Poor sleep keeps synapses excited, blocks the brain's ability to learn
+                                    Next, the researchers evaluated the participants' ability to learn new movements. In the morning, the subjects' learning performance was at its highest, as expected.
+
+                                    However, as the day progressed, they continued to make more and more mistakes. Again, this was expected.
+
+                                    After a night of restorative sleep, the participants' learning efficiency spiked again. But after their night of manipulated sleep, their learning efficiency did not improve as significantly. In fact, the morning after a night of manipulated sleep, the participants' performance was as low as on the evening of the previous day.
+
+                                    The reason why this happens, according to the researchers, is that during the manipulated deep sleep, the neurons' synapses did not "rest" as they normally would during restorative sleep.
+
+                                    During the day, our synapses get excited as a response to the stimuli that surround us. During sleep, however, these synapses restore themselves and their activity "normalizes." Without this restorative period, the synapses stay maximally excited for too long. Such a state inhibits neuroplasticity, which means that learning new things is no longer possible.
+
+                                    "In the strongly excited region of the brain, learning efficiency was saturated and could no longer be changed, which inhibited the learning of motor skills," explains co-lead author Nicole Wenderoth, professor in the Department of Health Sciences and Technology at the ETH Zurich.
+
+
+                                    To ensure that they located the right brain area responsible for deep sleep, the researchers repeated the experiment by assigning the same task but manipulating a different region of the brain.
+
+                                    This did not result in any changes to the participants' performance.
+
+                                    This is the first time that a study has proven the causal connection between deep sleep and learning efficiency.</p>
+                                <ul class="social-links list-unstyled d-flex justify-content-center">
+                                    <li><a href="#" target="_blank"><span class="fa fa-facebook mr-2"></span></a></li>
+                                    <li><a href="#" target="_blank"><span class="fa fa-twitter mr-2"></span></a></li>
+                                    <li><a href="#" target="_blank"><span class="fa fa-snapchat mr-2"></span></a></li>
+                                    <li><a href="#" target="_blank"><span class="fa fa-instagram mr-2"></span></a></li>
+                                </ul>
+                                <button class="btn btn-primary mb-1 btn-rotate"><span class="fa fa-long-arrow-left"> </span>&nbsp; Back</button>
+                            </div>
+                        </div>          
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function(){
+                $(function(){
+                    $('.btn-rotate').click(function(){
+                        $('.card-front').toggleClass('rotate-card-front');
+                        $('.card-back').toggleClass('rotate-card-back');
+                    });
+                });
+                
+                $("#A1").show(1000);
+                $("#A2").hide(1000);
+                $("#A3").hide(1000);
+                
+                $("#Ar1").click(function(){
+                    $("#A1").show(1000);
+                    $("#A2").hide(1000);
+                    $("#A3").hide(1000);
+                });
+                $("#Ar2").click(function(){
+                    $("#A1").hide(1000);
+                    $("#A2").show(1000);
+                    $("#A3").hide(1000);
+                });
+                $("#Ar3").click(function(){
+                    $("#A1").hide(1000);
+                    $("#A2").hide(1000);
+                    $("#A3").show(1000);
+                });
+            });
+
+
+        </script>
+    </body>
+
+</html>

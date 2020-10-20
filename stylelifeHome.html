@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>stylelife</title>
+
+        <!-- Bootstrap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--jquery links-->
+        <script src="jquery-3.2.1.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/registration.js"></script>
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Medical Help</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="indexHome.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="stylelifeHome.html">Life Style<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="articleHome.html">Articles</a>
+                    </li>
+
+
+
+                </ul>
+                <h5 class="nav-item mr-5 mt-2 userWelcome" style="color: white;"></h5>
+                <a class="btn btn-info" href="index.html">Logout</a>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-12" id="profile">
+                <div class="card text-center">
+                    <div class="card-header">profile form</div>
+                    <div class="card-block" id ="profile">
+                        <div class="form-group row">
+
+                            <label for="name" class="col-2 col-form-label">name</label>
+                            <div class="col-10">
+                                <input class="form-control" type="text"  id="1">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-2 col-form-label">email</label>
+                            <div class="col-10">
+                                <input class="form-control" type="email"  id="2">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="age" class="col-2 col-form-label">age</label>
+                            <div class="col-10">
+                                <input class="form-control" type="datetime-local" id="3">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="your Vital Signs" class="col-2 col-form-label">your vital sign</label>
+                            <div class="col-10">
+                                <input class="form-control" type="text"  id ="4">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="height" class="col-2 col-form-label">height</label>
+                            <div class="col-10">
+                                <input class="form-control" type="number" id="5">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="weight" class="col-2 col-form-label">weigth</label>
+                            <div class="col-10">
+                                <input class="form-control" type="number"  id="6">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="disease" class="col-2 col-form-label">your disease</label>
+                            <div class="col-10">
+                                <input class="form-control" type="text" id="7">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="surgery" class="col-2 col-form-label">Do you make any surgery</label>
+                            <div class="col-10">
+                                <input class="form-control" type="text" id="8">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="Genatic disease" class="col-2 col-form-label">do you have any Genatic disease</label>
+                            <div class="col-10">
+                                <input class="form-control" type="text" value="" id="9">
+                            </div>
+                        </div>
+                        <button class="btn btn-info mr-sm-2 mt-1 mr-2" id="save">save</button>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <div class= "col-3">
+                <div  id="post">
+
+
+                </div>
+
+            </div>
+            <div class="col-9" id="hide">
+
+                <div class="card">
+                    <img class="card-img-top" src="Kids-Lifestyle.gif" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">some advises acording to your profile </h4>
+                        <p class="card-text">1-Eat Fresh First<br>
+                            2-Take the Active Road<br>
+                            3-Detox Yourself<br>
+                            4-Relax and Recharge<br>
+                            5-Enjoy the Little Things</p>
+                        <a href="#" >for read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+
+                <div class="card">
+                    <div id="mycarousel" class="carousel slide bg-inverse"data-ride="carousel">
+                        <div class="carousal-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img class="d-block img-fliud w-100 h-50" style="height: 700px;" src="images/download.jpg" alt="first slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block  w-100 h-50" style="height: 700px;" src="images/surgery.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block  w-100 h-50" style="height: 700px;" src="images/5-Reasons-to-Live-a-Healthy-Lifestyle-1.jpg" alt="Third slide">
+                            </div>
+
+                        </div>
+                        <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <div class="card-block">
+                        <p class="card-text">With good food habits and daily physical activity you will be well on your way to a healthy life.  Easy to say, but sometimes not so easy to do!
+                            Our busy lifestyles can be hard on our family’s health. Rushing to and from school and work can make it hard to find time to be physically active. We can also slip into the habit of choosing unhealthy snacks and take-away foods or spending our free time watching TV or in front of the computer.
+                            However, these choices can be dangerous for our health and our children’s health – both now and in the long-term. That’s why it’s so important to stop, take stock and make a conscious decision to follow a healthy lifestyle.  <a href="#" class="card-link"> <i class="fa fa-external-link" aria-hidden="true"></i>  read more</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col col-flex-start">
+                    <p class="h5">Medical Help</p>
+                    <a class="card-link" href="#">About US</a><br>
+                    <a class="card-link" href="#">Our Team</a><br>
+                    <a class="card-link" href="#">Careers</a><br>
+                    <a class="card-link" href="#">Privacy Policy</a><br>
+                    <a class="card-link" href="#">Contact Us</a><br>
+
+                </div>
+                <div class="col col-flex-unordered">
+                    <p class="h5">Areas</p>
+                    <a class="card-link" href="#">Heliopolis</a><br>
+                    <a class="card-link" href="#">Nasr City</a><br>
+                    <a class="card-link" href="#">El-Maadi</a><br>
+                    <a class="card-link" href="#">New Cairo</a><br>
+                    <a class="card-link" href="#">Hadayek El-Kobba</a><br>
+                    <a class="card-link" href="#">El-Manyal</a><br>
+                    <a class="card-link" href="#">Shoubra</a><br>
+                    <a class="card-link" href="#">West El-Balad</a><br>               
+                </div>
+                <div class="col col-flex-unordered">
+                    <p class="h5">Specialities</p>
+                    <a class="card-link" href="#">Dermatology Doctor</a><br>
+                    <a class="card-link" href="#">Dentistry Doctor</a><br>
+                    <a class="card-link" href="#">Psychiatry Doctor</a><br>
+                    <a class="card-link" href="#">Pediatrics and New Born Doctor</a><br>
+                    <a class="card-link" href="#">Neurology Doctor</a><br>
+                    <a class="card-link" href="#">Orthopedics Doctor</a><br>
+                    <a class="card-link" href="#">Gynaecology and Infertility Doctor</a><br>
+                    <a class="card-link" href="#">Ear, Nose and Throat Doctor</a><br>
+                    <a class="card-link" href="#">Cardiology and Vascular Disease Doctor</a><br>
+                </div>
+                <div class="col col-flex-last">
+                    <p class="h5">Subscribe</p>
+                    <a href="#"><span class="fa fa-facebook fa-lg m-2" style="color: blue;"></span></a>
+                    <a href="#"><span class="fa fa-google-plus fa-lg m-2" style="color: red;"></span></a>
+                    <a href="#"><span class="fa fa-instagram fa-lg m-2" style="color:purple;"></span></a>
+                    <a href="#"><span class="fa fa-twitter fa-lg m-2" style="color: deepskyblue;"></span></a>
+
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+
+            $("#save").click(function(){
+
+                if($("#1").val() != "" || $("#2").val()!= ""){
+
+                    $("#post").append("<div class='card'><div class='card-header'><h4 class='card-title'>"+$("#1").val()+"</h4></div><p class='card-text'><h4>your Email:</h4>" +$("#2").val()+"</p><p class='card-text'><h4>AGE :</h4>" +$("#3").val()+"</p><p class='card-text'><h4>YOUR VITAL SIGN :</h4>" +$("#4").val()+"</p><p class='card-text'><h4>HEIGT :</h4>" +$("#5").val()+"</p><p class='card-text'><h4>WEIGHT:</h4>" +$("#6").val()+"</p> <p class='card-text'><h4>YOUR DISEASE:</h4>" +$("#7").val()+"</p><p class='card-text'><h4>SUYERGS:</h4>" +$("#8").val()+"</p><p class='card-text'><h4>GENATIC DISEASE:</h4>" +$("#9").val()+"</p>");}});
+
+            $("#save").click(function(){
+
+                $("#profile").hide(1000);
+
+            });
+            $(document).ready(function(){
+                $("#hide").hide();
+                $("#save").click(function(){
+                    $("#hide").toggle();
+                });
+            });
+
+
+        </script>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    </body>
+</html>
